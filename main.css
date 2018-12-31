@@ -1,0 +1,526 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg,#6cf7d4 70%, #f8585c 0);
+    background-attachment: fixed;
+}
+
+/* header & nav bar*/
+a {
+
+	color: #4C9CF1;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+	float: left;
+	padding: 5px;
+    font-size: 25px;
+    font-family: Rajdhani;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+nav ul li a{
+    position: relative;
+}
+
+nav ul li a:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+ul {
+    list-style: none;   
+}
+
+header {
+	background: transparent;
+	width: 100%;
+	height: 76px;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+#logo{
+	margin: 20px;
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+	float: left;
+	width: 200px;
+	height: 40px;
+	display: block;
+}
+
+nav {
+    float: right;
+	padding: 10px;
+}
+
+/* social media icon */
+.icons {
+    width: 80px;
+    height: 0px;
+    padding-top: 100px;
+    padding-left: 30px;
+    margin: 0;
+    text-align: center;
+    
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    color: #008b8b;
+} 
+
+.btn {
+    width: 35px;
+    height: 35px;
+    background: white;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 30%;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn i {
+    line-height: 35px;
+    font-size: 20px;
+    transition: 0.2s linear;
+}
+
+.btn:hover i {
+    transform: scale(1.2);
+    color: white;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 130%;
+    background: #4c9cf1;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.btn:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa {
+    0%{
+        left: -110%;
+        top: 90%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+
+/* name & details */
+.sec1 {
+    float: right;
+    padding: 15px;
+    padding-top: 110px;
+    margin: 0;
+    width: 75%;
+    font-family: 'PT Sans', sans-serif;
+    color: slateblue;
+    font-size: 35px;
+    font-size-adjust: auto;
+    text-align: center;
+    line-height: 1;
+}
+
+.name {
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.detail {
+    animation-delay: 2s;/*
+    animation-iteration-count: infinite;*/
+}
+
+/*skills bars */
+.skills {
+    width: 75%;
+    padding-top: 500px;
+    padding-bottom: 70px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.skills h1 {
+    color: darkcyan;
+    font-size: 40px;
+    text-align: center;
+}
+
+.skills li {
+    margin: 20px 0px 20px 20px;
+    color:#182929;
+    list-style: none;
+}
+
+.bar {
+    background-color: dimgrey;
+    display: block;
+    height: 11px;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bar span {
+    height: 15px;
+    float: left;
+    background-color: #2187e7;
+}
+
+.html {
+    width: 80%;
+    animation: html 2s;
+}
+
+@keyframes html {
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 80%
+    }
+}
+
+.css {
+    width: 70%;
+    animation: css 2s;
+}
+
+@keyframes css {
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 70%
+    }
+}
+
+.js {
+    width: 68%;
+    animation: js 2s;
+}
+
+@keyframes js {
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 68%
+    }
+}
+
+.sql {
+    width: 67%;
+    animation: sql 2s;
+}
+
+@keyframes sql {
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 67%
+    }
+}
+
+.lp {
+    width: 65%;
+    animation: lp 2s;
+}
+
+@keyframes lp {
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 65%
+    }
+}
+
+.wp {
+    width: 57%;
+    animation: wp 2s;
+}
+
+@keyframes wp {
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 57%
+    }
+}
+
+.psp {
+    width: 55%;
+    animation: psp 2s;
+}
+
+@keyframes psp {
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 55%
+    }
+}
+
+/* about me */
+.about img {
+    float: left;
+    padding-top: 200px;
+    padding-left: 30px;
+    padding-right: 10px;
+    width: 200px;
+    height: 170px;
+}
+
+.about h1 {
+    padding-top: 100px;
+    width: 60%;
+    float: right;
+    text-align: center;
+    font-size: 40px;
+    color:darkcyan;
+    font-family: 'dosis';
+}
+
+.about p {
+    width: 60%;
+    padding-right: 10px;
+    float: right;
+    font-family: 'Abel', sans-serif;
+    color: dimgrey;
+    text-align: center;
+}
+
+/* contact form */
+.contact {
+    width: 100%;
+    padding-top: 700px;
+    padding-bottom: 350px;
+    line-height: 0.75;
+}
+
+.contact h1 {
+    width: 75%;
+    text-align: center;
+    font-family: 'B612', sans-serif;
+    font-size: 40px;
+    color:darkcyan;
+}
+
+.contact p {
+    width: 75%;
+    text-align: center;
+    font-size: 25px;
+    color:darkslategray;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+.contact form {
+    position: absolute;
+    width: 75%;
+    color: white;
+    text-align: center;
+}
+
+.contact form input {
+    width: 100%;
+    margin: 20px 0px 20px 20px;
+    background: rgb(0,0,0,0);
+    border: none;
+    border-bottom: 1px solid #0078ff;
+    font-size: 18px;
+    letter-spacing: 5px;
+    
+}
+
+.contact form textarea {
+    width: 100%;
+    margin: 20px 0px 20px 20px;
+    background: rgb(0,0,0,0);
+    border: none;
+    border-bottom: 1px solid #0078ff;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+#msg {
+    margin-top: 60px;
+}
+
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 640px) {
+
+header {
+	position: absolute;
+}
+
+nav {
+    width: 100%;
+}
+    
+nav ul, nav:active ul { 
+	position: absolute;
+	text-align: center;
+	top: 70px;
+    width: 250px;
+    padding: 0;
+    margin-left: 20px; 
+}
+
+nav li {
+    display: inline-block;
+	text-align: center;
+	padding: 10px;
+	margin: 0;
+}
+    
+nav:hover ul {
+    display: block;
+}
+    
+.sec1 {
+    font-size: 20px;
+    padding: 0;
+    padding-bottom: 70px;
+    margin-top: 250px;
+    margin-right: 0;
+    width: 100%;
+}
+
+.about img {
+        width: 80px;
+        height: 80px;
+        padding-top: 100px;
+        
+}
+
+.about h1 {
+        padding-top: 20px;
+}
+    
+.contact {
+    width: 100%;
+    margin-top: 350px;
+    padding-bottom: 300px;
+}
+    
+.contact h1 {
+    width: 100%;
+    font-size: 25px;
+}
+
+.contact p {
+    width: 100%;
+    font-size: 22px;
+}    
+
+.contact form {
+    width: 90%;
+}
+    
+.contact form input {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#msg {
+    margin-top: 45px;
+}
+
+.skills {
+    width: 100%;
+    padding-top: 550px;
+    padding-bottom: 40px;
+}
+
+.skills h1 {
+    font-size: 25px;
+}
+
+.skills li {
+    text-align: center; 
+    margin: 20px;
+    font-size: 15px;
+}
+    
+.bar {
+    width: 100%;
+}
+    
+.icons {
+    width: 100%;
+    padding-left: 0;
+}
+    
+.btn {
+    transform: scale(0.9);
+    margin: 5px;
+}
